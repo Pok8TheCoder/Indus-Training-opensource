@@ -28,6 +28,13 @@ def spread(values):
     return round(max(values) - min(values), 2)
 
 
+def word_count(text):
+    """Count the number of words in a given string."""
+    if not text or not isinstance(text, str):
+        return 0
+    return len(text.split())
+
+
 def summarise(values):
     """All three, as a dict."""
     return {"mean": mean(values),
